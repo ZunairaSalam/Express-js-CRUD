@@ -1,0 +1,50 @@
+doctype html
+head
+  title Products
+  style.
+    table{
+    color: teal;
+    width: 70%;
+    padding-left: 50px;
+    font-size: 16px;
+    }
+    th,td{
+    border-bottom: 1px solid teal;
+    }
+    th{
+    background-color: PowderBlue;
+    color:black;
+    }
+    form{
+    display: inline;
+    }
+h1(style='color: teal; padding-left: 50px') Product List
+
+form(action='new' method='post' style='padding-left:50px')
+  button(type='submit' style='background-color:teal; color:white; width: 80px; height:40px') Add new 
+form(action='updateform' method='post' style='padding-left:50px')
+  button(type='submit' style='background-color:green; color:white; width: 80px; height:40px') Update 
+form(action='deleteform' method='post' style='padding-left:50px')
+  button(type='submit' style='background-color:red; color:white; width: 80px; height:40px') Delete 
+br
+br
+table
+  tr
+    th ID
+    th Name
+    th Category
+    th Description
+    th Price 
+ 
+  each document in documents
+    tr
+        td  #{document.ID}
+        td  #{document.Name}
+        td  #{document.category}
+        td  #{document.Description}
+        td  #{document.Price}
+form(action='logout' method='post')
+    br
+    br
+    button(type='submit' style='background-color:teal; color:white; width: 80px; height:40px; margin-left:50px') Logout         
+    

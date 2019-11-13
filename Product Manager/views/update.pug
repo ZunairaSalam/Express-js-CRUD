@@ -1,0 +1,28 @@
+doctype html
+head
+center 
+    h1(style='color: teal') UPDATE PRODUCT
+
+    form(action='/update' method='POST' style='background-color:PowderBlue; color: black; font-size:20px; width:50%')
+        br
+        br
+        div
+        | ProductName:
+        input(name='name' type='text' placeholder='productname')
+        br
+        br
+        div
+        | Price:
+        input(name='price' type='text' placeholder='price')
+        br
+        br
+        div
+        | Category:
+        input(name='category' type='text' placeholder='category')
+        br
+        br
+        div
+        br
+        br
+        input(onclick="location.href='http://localhost:3000/product'" type='submit' value='Submit' style='background-color:teal; color:white; width:70px; height:40px')
+        br

@@ -1,0 +1,41 @@
+doctype html
+
+head
+  title Sign Up
+ 
+center
+  h1(style='color: teal') Product Manager
+  h2(style='color: teal')  Sign Up 
+  form(action='signup' method='POST' style='background-color:PowderBlue; color: black; font-size:20px; width:50%')
+    br
+    | Name: 
+    input(type='text' name='fname' placeholder='First name')
+    br
+    br
+    | Email: 
+    input(type='email' name='email' placeholder='Email')
+    br
+    br
+    | Sign Up as: 
+    br
+    br
+    input(type='radio' name='role' value='buyer')
+    | Buyer
+    br
+    input(type='radio' name='role' value='seller')
+    | Seller
+    br
+    br
+    | Password: 
+    input(type='password' name='password' placeholder='Password')
+    br
+    br
+    | Confirm Password: 
+    input(type='password' name='password1' placeholder='Confimed Password')
+    br
+    br
+    button(style='color: white; background-color: teal; width:80px; height:40px') Sign In
+    br
+  
+  h2(style='color: teal') Already have an Account?   
+  button(style='color: white; background-color: teal; width:70px; height:40px' onclick="location.href='http://localhost:3000/login'") LogIn

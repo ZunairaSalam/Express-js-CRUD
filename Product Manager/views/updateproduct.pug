@@ -1,0 +1,27 @@
+doctype html
+head
+  title New Product
+h1(style='font-size:30px; margin-left:420px;padding-left:190px; background-color: green; color: white; width :29%')  New Product  
+br
+form(action='add' method='POST' style='color: green; font-size:20px; width: 32%;background-color:aliceblue; padding-left:150px; border-color:lightgreen; margin-left:420px')
+  | Name: 
+  input(type='text' name='pname' placeholder='Product name')
+  br
+  br
+  |         Description: 
+  input(type='text' name='Description' placeholder='Description ')
+  br
+  br
+  |         Price: 
+  input(type='text' name='price' placeholder='Price')
+  br
+  br
+  |         Category: 
+  input(type='text' name='category' placeholder='Category')
+  br
+  br
+  |         Image: 
+  input(type='file' name='pimage')
+  br
+  br
+  button(type='submit' style='background-color:green; color:white; width: 100px; height:40px') Add product

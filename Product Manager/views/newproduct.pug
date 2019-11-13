@@ -1,0 +1,29 @@
+doctype html
+head
+  title New Product
+center
+  h1(style='color: teal; width :29%')  New Product  
+  br
+  form(action='add' method='POST' style='color: green; font-size:20px; width: 32%;background-color:aliceblue; border-color:teal')
+    |         ID: 
+    input(type='text' name='pid')
+    br
+    br
+    | Name: 
+    input(type='text' name='pname' placeholder='Product name')
+    br
+    br
+    |         Description: 
+    input(type='text' name='Description' placeholder='Description ')
+    br
+    br
+    |         Price: 
+    input(type='text' name='price' placeholder='Price')
+    br
+    br
+    |         Category: 
+    input(type='text' name='category' placeholder='Category')
+    br
+    br
+
+    button(type='submit' style='background-color:teal; color:white; width: 100px; height:40px') Add product
